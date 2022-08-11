@@ -1,0 +1,354 @@
+/* Todo el Cuerpo de la Página */
+
+body {
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#formcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#drids {
+    text-align: center;
+}
+
+#abwetext {
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: rgb(30, 30, 255);
+    padding: 10px;
+    border-radius: 1em;
+    grid-area: abwetext;
+}
+
+
+
+/* Cabezera */
+header img, .btn2 img {
+    width: 16px;
+}
+
+header li, header div,  header nav{
+    display: inline-block
+}
+
+header div {
+    margin-right: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(19, 19, 19);
+    border-radius: 1em;
+    position: sticky;
+    top: 8px;
+    z-index: 2;
+}
+
+header nav {
+    display: inline;
+    justify-content: right;
+    align-items: right;
+}
+
+header h1 {
+    margin: 0;
+    width: min-content;
+    padding-left: 10px;
+}
+
+#headerc {
+    margin-bottom: 20px;
+}
+
+
+
+/* Cubos */
+.cube {
+    border-radius: 1em;
+    border: 3px solid rgb(255, 255, 255);
+    background-size: cover;
+    background-position-y:center;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 20px;
+    transition: all 700ms;
+}
+
+.cube:hover {
+    transform: scale(1.01);
+}
+
+#cbn1h, #cbn4g {
+    background-image: url(../img/forzaHorizon5.jpg);
+    height: 300px;
+}
+
+#cbn1h {
+    grid-area: cbn1h;
+}
+
+#cbn2h {
+    background-image: url(../img/paqueteAdobe.jpg);
+    height: 500px;
+    grid-area: cbn2h;
+}
+
+#cbn3h {
+    background-image: url(../img/office.jpg);
+    height: 400px;
+    grid-area: cbn3h;
+}
+
+#cbn1g {
+    background-image: url(../img/splitgate.jpg);
+    height: 300px;
+    grid-area: cbn1g;
+}
+
+#cbn2g {
+    background-image: url(../img/portal.jpg);
+    height: 400px;
+    grid-area: cbn2g;
+}
+
+#cbn3g {
+    background-image: url(../img/portal2.jpg);
+    height: 400px;
+    grid-area: cbn3g;
+}
+
+#cbn4g {
+    grid-area: cbn4g;
+}
+
+#cbn1m {
+    background-image: url(../img/marvel.jpg);
+    background-position: top !important;
+    height: 300px;
+    grid-area: cbn1m;
+}
+
+#cbn2m {
+    background-image: url(../img/starWars.jpg);
+    height: 400px;
+    grid-area: cbn2m;
+}
+
+#cbn3m {
+    background-image: url(../img/disney.jpg);
+    background-position: bottom !important;
+    height: 300px;
+    grid-area: cbn3m;
+}
+
+
+
+/* Conenido de los cubos */
+
+main h2 {
+    grid-area: title;
+}
+.cube h1 {
+    background-color: rgb(39, 89, 252);
+    padding: 10px;
+    border-radius: 1rem;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.btn {
+    background-color: rgb(19, 19, 19);
+    width: fit-content;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 1em;
+    position: absolute;
+    align-self: center;
+    margin-top: 150px;
+}
+
+#form, .btn {
+    transition: transform 700ms;
+}
+
+#form:hover {
+    transform: scale(1.01);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+
+.btn:active {
+    border: 2px solid rgb(39, 89, 252);
+}
+
+.btn:active {
+    color: rgb(255, 255, 255);
+    box-shadow: inset 4px 4px 12px #272727,
+                inset -4px -4px 12px #000000;
+   }
+
+.btn2 {
+    background-color: rgb(19, 19, 19);
+    width: fit-content;
+    padding: 15px;
+    border-radius: 1em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.btn2:active {
+    color: rgb(255, 255, 255);
+    box-shadow: inset 4px 4px 12px #272727,
+                inset -4px -4px 12px #000000;
+   }
+
+#titles {
+    text-align: center;
+}
+
+nav ul div{
+    transition: all 0.5s;
+}
+
+nav ul div:hover{
+    transform: scale(1.1);
+    background-color: rgb(44, 44, 44);
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 1rem;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/* Entada de texto formulario */
+input {
+    border: none;
+    border-radius: 1em;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: bold;
+    max-width: 200px;
+    margin-bottom: 20px;
+    margin-top: 3px;
+    color: rgb(255, 255, 255);
+}
+   
+input:focus {
+    outline-color: rgb(255, 255, 255);
+}
+
+#submit {
+    margin-top: 20px;
+}
+
+#form {
+    display:block;
+    background-color: rgb(0, 125, 228);
+    padding: 10px;
+    border-radius: 1em;
+    width: min-content;
+    grid-area: form;
+}
+
+textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 1em;
+    margin-top: 3px;
+}
+
+#formtitle {
+    grid-area: formt;
+}
+
+.formtitle {
+    background-color: rgb(30, 30, 255);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+#gridg {
+    display: grid;
+    grid-template-areas: 
+    "title title"    
+    "cbn1g cbn1g"
+    "cbn2g cbn3g"
+    "cbn4g cbn4g";
+}
+
+#gridm {
+    display: grid;
+    grid-template-areas:
+    "title"
+    "cbn1m"
+    "cbn2m"
+    "cbn3m"; 
+}
+
+#gridaw {
+    display: grid;
+    grid-template-areas:
+    "abwetext";
+}
+
+#gridc {
+    display: grid;
+    grid-template-areas:
+    "formt"
+    "form";
+}
+
+#gridh {
+    display: grid;
+    grid-template-areas:
+    "title"
+    "cbn1h"
+    "cbn2h"
+    "cbn3h";
+}
+
+#grids {
+    display: grid;
+    grid-template-areas:
+    "titles"
+    "homebtn";
+}
