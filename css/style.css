@@ -82,7 +82,7 @@ header h1 {
 
 /* Cubos */
 .cube {
-    border-radius: 1em;
+    border-radius: 10px;
     border: 3px solid rgb(255, 255, 255);
     background-size: cover;
     background-position-y:center;
@@ -166,6 +166,25 @@ header h1 {
 
 #cbn4g {
     grid-area: cbn4g;
+}
+
+#cbn5g {
+    background-image: url(../img/fortnite.jfif);
+    height: 300px;
+    grid-area: cbn5g;
+}
+
+#cbn6g {
+    background-image: url(../img/rocketLeauge.jpg);
+    height: 300px;
+    grid-area: cbn6g;
+}
+
+#cbn7g {
+    background-image: url(../img/stray.jpg);
+    background-position: top !important;
+    grid-area: cbn7g;
+    height: 300px;
 }
 
 #cbn1m {
@@ -338,7 +357,10 @@ textarea {
     "cbn1g"
     "cbn2g"
     "cbn3g"
-    "cbn4g";
+    "cbn4g"
+    "cbn5g"
+    "cbn6g"
+    "cbn7g";
 }
 
 #gridm {
@@ -393,5 +415,17 @@ textarea {
         "cbn1h cbn1h cbn2h"
         "cbn3h cbn4h cbn4h"
         "cbn5h cbn7h cbn6h";
+        grid-template-columns: 33.3333% 33.3333% 33.3333%;
+    }
+
+    #gridg {
+        display: grid;
+        grid-template-areas: 
+        "title title title title"    
+        "cbn1g cbn1g cbn1g cbn1g"
+        "cbn2g cbn2g cbn2g cbn3g"
+        "cbn4g cbn5g cbn5g cbn5g"
+        "cbn6g cbn6g cbn7g cbn7g";
+        grid-template-columns: 25% 25% 25% 25%;
     }
 }
