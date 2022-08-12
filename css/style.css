@@ -111,14 +111,39 @@ header h1 {
 
 #cbn2h {
     background-image: url(../img/paqueteAdobe.jpg);
-    height: 500px;
+    height: 300px;
     grid-area: cbn2h;
 }
 
 #cbn3h {
     background-image: url(../img/office.jpg);
-    height: 400px;
+    height: 300px;
     grid-area: cbn3h;
+}
+
+#cbn4h {
+    background-image: url(../img/fortnite.jfif);
+    height: 300px;
+    grid-area: cbn4h;
+}
+
+#cbn5h {
+    background-image: url(../img/rocketLeauge.jpg);
+    height: 300px;
+    grid-area: cbn5h;
+}
+
+#cbn6h {
+    background-image: url(../img/stray.jpg);
+    background-position: top !important;
+    height: 300px;
+    grid-area: cbn6h;
+}
+
+#cbn7h {
+    background-image: url(../img/zoom.webp);
+    height: 300px;
+    grid-area: cbn7h;
 }
 
 #cbn1g {
@@ -309,10 +334,11 @@ textarea {
 #gridg {
     display: grid;
     grid-template-areas: 
-    "title title"    
-    "cbn1g cbn1g"
-    "cbn2g cbn3g"
-    "cbn4g cbn4g";
+    "title"    
+    "cbn1g"
+    "cbn2g"
+    "cbn3g"
+    "cbn4g";
 }
 
 #gridm {
@@ -343,7 +369,11 @@ textarea {
     "title"
     "cbn1h"
     "cbn2h"
-    "cbn3h";
+    "cbn3h"
+    "cbn4h"
+    "cbn5h"
+    "cbn6h"
+    "cbn7h";
 }
 
 #grids {
@@ -351,4 +381,17 @@ textarea {
     grid-template-areas:
     "titles"
     "homebtn";
+}
+
+/* Responsive Design */
+
+@media only screen and (min-width: 1200px) {
+    #gridh {
+        display: grid;
+        grid-template-areas:
+        "title title title"
+        "cbn1h cbn1h cbn2h"
+        "cbn3h cbn4h cbn4h"
+        "cbn5h cbn7h cbn6h";
+    }
 }
