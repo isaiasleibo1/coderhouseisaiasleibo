@@ -5,6 +5,7 @@ body {
     color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     user-select: none;
+    min-height: 100vh;
 }
 
 a {
@@ -57,9 +58,9 @@ header {
     justify-content: space-between;
     background-color: rgb(19, 19, 19);
     border-radius: 1em;
-    position: sticky;
     top: 8px;
     z-index: 2;
+    grid-area: header;
 }
 
 header nav {
@@ -94,6 +95,7 @@ header h1 {
     margin-left: 1%;
     margin-top: 20px;
     transition: all 700ms;
+    height: 300px;
 }
 
 .cube:hover {
@@ -102,7 +104,6 @@ header h1 {
 
 #cbn1h, #cbn4g {
     background-image: url(../img/forzaHorizon5.jpg);
-    height: 300px;
 }
 
 #cbn1h {
@@ -111,56 +112,47 @@ header h1 {
 
 #cbn2h {
     background-image: url(../img/paqueteAdobe.jpg);
-    height: 300px;
     grid-area: cbn2h;
 }
 
 #cbn3h {
     background-image: url(../img/office.jpg);
-    height: 300px;
     grid-area: cbn3h;
 }
 
 #cbn4h {
     background-image: url(../img/fortnite.jfif);
-    height: 300px;
     grid-area: cbn4h;
 }
 
 #cbn5h {
     background-image: url(../img/rocketLeauge.jpg);
-    height: 300px;
     grid-area: cbn5h;
 }
 
 #cbn6h {
     background-image: url(../img/stray.jpg);
     background-position: top !important;
-    height: 300px;
     grid-area: cbn6h;
 }
 
 #cbn7h {
     background-image: url(../img/zoom.webp);
-    height: 300px;
     grid-area: cbn7h;
 }
 
 #cbn1g {
     background-image: url(../img/splitgate.jpg);
-    height: 300px;
     grid-area: cbn1g;
 }
 
 #cbn2g {
     background-image: url(../img/portal.jpg);
-    height: 400px;
     grid-area: cbn2g;
 }
 
 #cbn3g {
     background-image: url(../img/portal2.jpg);
-    height: 400px;
     grid-area: cbn3g;
 }
 
@@ -170,13 +162,11 @@ header h1 {
 
 #cbn5g {
     background-image: url(../img/fortnite.jfif);
-    height: 300px;
     grid-area: cbn5g;
 }
 
 #cbn6g {
     background-image: url(../img/rocketLeauge.jpg);
-    height: 300px;
     grid-area: cbn6g;
 }
 
@@ -184,30 +174,29 @@ header h1 {
     background-image: url(../img/stray.jpg);
     background-position: top !important;
     grid-area: cbn7g;
-    height: 300px;
 }
 
 #cbn1m {
     background-image: url(../img/marvel.jpg);
     background-position: top !important;
-    height: 300px;
     grid-area: cbn1m;
 }
 
 #cbn2m {
     background-image: url(../img/starWars.jpg);
-    height: 400px;
     grid-area: cbn2m;
 }
 
 #cbn3m {
     background-image: url(../img/disney.jpg);
     background-position: bottom !important;
-    height: 300px;
     grid-area: cbn3m;
 }
 
-
+#cbn4m {
+    background-image: url(../img/pixar.jpg);
+    grid-area: cbn4m;
+}
 
 /* Conenido de los cubos */
 
@@ -288,13 +277,23 @@ nav ul div:hover{
     border-radius: 1rem;
 }
 
+#hometext {
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: rgb(30, 30, 255);
+    padding: 10px;
+    border-radius: 1em;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
 /* Pie de página */
 footer {
     text-align: center;
     margin-top: 20px;
+    grid-area: footer;
 }
-
-
 
 /* Entada de texto formulario */
 input {
@@ -369,7 +368,8 @@ textarea {
     "title"
     "cbn1m"
     "cbn2m"
-    "cbn3m"; 
+    "cbn3m"
+    "cbn4m"; 
 }
 
 #gridaw {
@@ -388,6 +388,7 @@ textarea {
 #gridh {
     display: grid;
     grid-template-areas:
+    "header"
     "title"
     "cbn1h"
     "cbn2h"
@@ -395,7 +396,8 @@ textarea {
     "cbn4h"
     "cbn5h"
     "cbn6h"
-    "cbn7h";
+    "cbn7h"
+    "footer";
 }
 
 #grids {
@@ -408,18 +410,21 @@ textarea {
 /* Responsive Design */
 
 @media only screen and (min-width: 1200px) {
+    header {
+        
+    position: sticky;
+    }
+    
     #gridh {
-        display: grid;
         grid-template-areas:
-        "title title title"
-        "cbn1h cbn1h cbn2h"
-        "cbn3h cbn4h cbn4h"
-        "cbn5h cbn7h cbn6h";
+        "title  title  title "
+        "cbn1h  cbn1h  cbn2h "
+        "cbn3h  cbn4h  cbn4h "
+        "cbn5h  cbn7h  cbn6h ";
         grid-template-columns: 33.3333% 33.3333% 33.3333%;
     }
 
     #gridg {
-        display: grid;
         grid-template-areas: 
         "title title title title"    
         "cbn1g cbn1g cbn1g cbn1g"
@@ -427,5 +432,14 @@ textarea {
         "cbn4g cbn5g cbn5g cbn5g"
         "cbn6g cbn6g cbn7g cbn7g";
         grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    #gridm {
+        display: grid;
+        grid-template-areas:
+        "title title"
+        "cbn1m cbn2m"
+        "cbn3m cbn4m";
+        grid-template-columns: 50%; 
     }
 }
