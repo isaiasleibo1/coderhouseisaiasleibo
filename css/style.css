@@ -275,7 +275,6 @@ header h1 {
     }
 
     nav ul div:hover{
-        transform: scale(1.1);
         background-color: rgb(44, 44, 44);
         padding-right: 5px;
         padding-left: 5px;
