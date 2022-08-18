@@ -17,17 +17,6 @@ a {
     display: none;
 }
 
-#formcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#drids {
-    text-align: center;
-}
-
 #abwetext {
     margin-right: 5px;
     margin-left: 5px;
@@ -37,7 +26,20 @@ a {
     grid-area: abwetext;
 }
 
+main h2 {
+    grid-area: title;
+}
 
+#hometext {
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: rgb(30, 30, 255);
+    padding: 10px;
+    border-radius: 1em;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 16px;
+}
 
 /* Cabezera */
 header img, .btn2 img {
@@ -61,6 +63,12 @@ header {
     top: 8px;
     z-index: 2;
     grid-area: header;
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        position: sticky;
+    }
 }
 
 header nav {
@@ -95,18 +103,26 @@ header h1 {
     margin-left: 1%;
     margin-top: 20px;
     transition: all 700ms;
-    height: 300px;
+    height: 230px;
 }
 
-.cube:hover {
+@media only screen and (min-width: 1200px) {
+
+    .cube {
+        height: 300px;
+    }
+    
+    .cube:hover {
     transform: scale(1.01);
+    }
 }
 
-#cbn1h, #cbn4g {
-    background-image: url(../img/forzaHorizon5.jpg);
-}
+
+
+    /* Cubos Inicio */
 
 #cbn1h {
+    background-image: url(../img/forzaHorizon5.jpg);
     grid-area: cbn1h;
 }
 
@@ -141,6 +157,8 @@ header h1 {
     grid-area: cbn7h;
 }
 
+    /* Cubos Juegos */
+
 #cbn1g {
     background-image: url(../img/splitgate.jpg);
     grid-area: cbn1g;
@@ -157,6 +175,7 @@ header h1 {
 }
 
 #cbn4g {
+    background-image: url(../img/forzaHorizon5.jpg);
     grid-area: cbn4g;
 }
 
@@ -175,6 +194,8 @@ header h1 {
     background-position: top !important;
     grid-area: cbn7g;
 }
+
+    /* Cubos Películas */
 
 #cbn1m {
     background-image: url(../img/marvel.jpg);
@@ -200,9 +221,7 @@ header h1 {
 
 /* Conenido de los cubos */
 
-main h2 {
-    grid-area: title;
-}
+
 .cube h1 {
     background-color: rgb(39, 89, 252);
     padding: 10px;
@@ -223,28 +242,46 @@ main h2 {
     margin-top: 150px;
 }
 
+
+
 #form, .btn {
     transition: transform 700ms;
 }
 
-#form:hover {
-    transform: scale(1.01);
-}
+@media only screen and (min-width: 1200px) {
 
-.btn:hover {
-    transform: scale(1.1);
-    border: 2px solid white;
-}
+    #form:hover {
+        transform: scale(1.01);
+    }
 
-.btn:active {
-    border: 2px solid rgb(39, 89, 252);
-}
+    .btn:hover {
+        transform: scale(1.1);
+        border: 2px solid rgb(255, 255, 255);
+    }
 
-.btn:active {
+    .btn:active {
+        box-shadow: inset 4px 4px 12px #272727,
+                    inset -4px -4px 12px #000000;
+    }
+    
+    .btn2:active {
     color: rgb(255, 255, 255);
     box-shadow: inset 4px 4px 12px #272727,
                 inset -4px -4px 12px #000000;
    }
+   
+    nav ul div {
+        transition: all 0.5s;
+    }
+
+    nav ul div:hover{
+        transform: scale(1.1);
+        background-color: rgb(44, 44, 44);
+        padding-right: 5px;
+        padding-left: 5px;
+        border-radius: 1rem;
+    }
+}
 
 .btn2 {
     background-color: rgb(19, 19, 19);
@@ -255,38 +292,11 @@ main h2 {
     margin-left: auto;
 }
 
-.btn2:active {
-    color: rgb(255, 255, 255);
-    box-shadow: inset 4px 4px 12px #272727,
-                inset -4px -4px 12px #000000;
-   }
-
 #titles {
     text-align: center;
 }
 
-nav ul div{
-    transition: all 0.5s;
-}
 
-nav ul div:hover{
-    transform: scale(1.1);
-    background-color: rgb(44, 44, 44);
-    padding-right: 5px;
-    padding-left: 5px;
-    border-radius: 1rem;
-}
-
-#hometext {
-    margin-right: 5px;
-    margin-left: 5px;
-    background-color: rgb(30, 30, 255);
-    padding: 10px;
-    border-radius: 1em;
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: 16px;
-}
 
 /* Pie de página */
 footer {
@@ -295,7 +305,8 @@ footer {
     grid-area: footer;
 }
 
-/* Entada de texto formulario */
+/* Formulario */
+
 input {
     border: none;
     border-radius: 1em;
@@ -335,6 +346,8 @@ textarea {
     font-weight: bold;
     border-radius: 1em;
     margin-top: 3px;
+    max-width: 200px;
+    padding: 15px;
 }
 
 #formtitle {
@@ -348,6 +361,15 @@ textarea {
     padding: 10px;
     border-radius: 1em;
 }
+
+#formcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Grids */
 
 #gridg {
     display: grid;
@@ -407,13 +429,7 @@ textarea {
     "homebtn";
 }
 
-/* Responsive Design */
-
 @media only screen and (min-width: 1200px) {
-    header {
-        
-    position: sticky;
-    }
     
     #gridh {
         grid-template-areas:
@@ -443,3 +459,4 @@ textarea {
         grid-template-columns: 50%; 
     }
 }
+
