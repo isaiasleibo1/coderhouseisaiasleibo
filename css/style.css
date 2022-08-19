@@ -1,4 +1,10 @@
 /* Todo el Cuerpo de la Página */
+@media only screen and (min-width: 1200px) and (max-width: 1470px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
 body {
     background-color: rgb(48, 48, 48);
     color: rgb(255, 255, 255);
@@ -27,6 +33,8 @@ a {
 }
 
 main h2 {
+    margin-top: 16px;
+    margin-left: 10px;
     grid-area: title;
 }
 
@@ -298,6 +306,7 @@ header h1 {
 }
 
 #titles {
+    margin-top: 16px;
     text-align: center;
 }
 
@@ -351,13 +360,15 @@ textarea {
     font-weight: bold;
     border-radius: 1em;
     margin-top: 3px;
-    max-width: 200px;
+    width: 200px;
+    height: 150px;
     padding: 15px;
 }
 
 #formtitle {
     grid-area: formt;
     text-align: center;
+    margin-top: 16px;
 }
 
 .formtitle {
