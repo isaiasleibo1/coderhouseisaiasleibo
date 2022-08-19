@@ -50,6 +50,18 @@ main h2 {
     text-align: center;
 }
 
+@media only screen and (max-width: 510px) {
+    #hometext {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #hometext {
+        font-size: 17px;
+    }
+}
+
 /* Cabezera */
 header img, .btn2 img {
     width: 16px;
