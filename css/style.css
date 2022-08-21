@@ -63,6 +63,21 @@ main h2 {
 }
 
 /* Cabezera */
+.nav-item {
+    cursor: pointer;
+}
+
+@media (max-width:767.98px) { 
+    .nav-item {
+        background-color: #2e2e2e;
+        padding: 3px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 3px;
+        border-radius: 1em;
+    }
+ }
+
 header img, .btn2 img {
     width: 16px;
 }
@@ -83,12 +98,6 @@ header {
     top: 8px;
     z-index: 2;
     grid-area: header;
-}
-
-@media only screen and (min-width: 1200px) {
-    header {
-        position: sticky;
-    }
 }
 
 header h1 {
@@ -113,8 +122,8 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 10px;
+    margin-left: 10px;
     margin-top: 20px;
     transition: all 700ms;
     height: 230px;
