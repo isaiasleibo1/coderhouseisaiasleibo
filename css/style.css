@@ -85,6 +85,9 @@ main h2 {
         padding-left: 10px;
         margin-top: 3px;
         border-radius: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
  }
 
