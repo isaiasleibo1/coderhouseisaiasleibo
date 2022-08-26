@@ -10,8 +10,13 @@
     h5, p {
         background-color: black;
         padding: 1%;
-        border-radius: 10px;
+        border-radius: 7px;
         opacity: 0.8;
+    }
+
+    b {
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }
 
@@ -30,6 +35,10 @@
 @media only screen and (min-width: 426px) {
     .carousel-caption {
         font-size: 100%;
+
+        p {
+            border-radius: 10px;
+        }
     }
 }
 

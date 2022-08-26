@@ -181,16 +181,17 @@ header h1 {
   margin-bottom: 20px;
 }
 
-nav ul div {
-  transition: all 0.5s;
+@media only screen and (min-width: 1200px) {
+  nav ul div {
+    transition: all 0.4s;
+  }
+  nav ul div:hover {
+    background-color: rgb(44, 44, 44);
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 1rem;
+  }
 }
-nav ul div:hover {
-  background-color: rgb(44, 44, 44);
-  padding-right: 5px;
-  padding-left: 5px;
-  border-radius: 1rem;
-}
-
 .cube {
   border-radius: 10px;
   border: 3px solid rgb(255, 255, 255);
@@ -215,6 +216,15 @@ nav ul div:hover {
     transform: scale(1.01);
   }
 }
+#cbn1h {
+  background-image: url(../img/stray.webp);
+  background-position: top !important;
+}
+
+#cbn2h {
+  background-image: url(../img/zoom.webp);
+}
+
 #cbn1g {
   background-image: url(../img/splitgate.webp);
 }
@@ -264,8 +274,8 @@ nav ul div:hover {
 
 footer {
   text-align: center;
-  margin-top: 20px;
   transition: all 0.7s;
+  margin-top: auto;
 }
 footer p {
   margin-right: 5px;
@@ -374,6 +384,14 @@ textarea {
   margin-top: 16px;
 }
 
+@media only screen and (max-width: 400px) {
+  #formtitle h2, #formtitle h3 {
+    font-size: 18px;
+  }
+  #formtitle p {
+    font-size: 14px;
+  }
+}
 .formtitle {
   background: linear-gradient(rgb(30, 30, 255), rgb(30, 135, 255));
   width: -webkit-fit-content;
@@ -430,8 +448,12 @@ textarea {
 .carousel-caption h5, .carousel-caption p {
   background-color: black;
   padding: 1%;
-  border-radius: 10px;
+  border-radius: 7px;
   opacity: 0.8;
+}
+.carousel-caption b {
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .carousel.slide {
@@ -449,6 +471,9 @@ textarea {
 @media only screen and (min-width: 426px) {
   .carousel-caption {
     font-size: 100%;
+  }
+  .carousel-caption p {
+    border-radius: 10px;
   }
 }
 @media only screen and (min-width: 576px) {
@@ -472,6 +497,11 @@ textarea {
 #gridg {
   display: grid;
   grid-template-areas: "title" "cbn1g" "cbn2g" "cbn3g" "cbn4g" "cbn5g" "cbn6g" "cbn7g";
+}
+
+#gridh {
+  display: grid;
+  grid-template-areas: "cbn1h" "cbn2h";
 }
 
 #gridm {
@@ -500,8 +530,11 @@ textarea {
     grid-template-columns: 25% 25% 25% 25%;
   }
   #gridm {
-    display: grid;
     grid-template-areas: "title title" "cbn1m cbn2m" "cbn3m cbn4m";
+    grid-template-columns: 50%;
+  }
+  #gridh {
+    grid-template-areas: "cbn1h cbn2h";
     grid-template-columns: 50%;
   }
 }
@@ -573,6 +606,14 @@ header {
   grid-area: header;
 }
 
+#cbn1h {
+  grid-area: cbn1h;
+}
+
+#cbn2h {
+  grid-area: cbn2h;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1470px) {
   h1 {
     font-size: 32px;
@@ -586,6 +627,8 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
@@ -626,14 +669,9 @@ main h2 {
   text-align: center;
 }
 
-@media only screen and (max-width: 510px) {
-  #hometext {
-    font-size: 20px;
-  }
-}
 @media only screen and (max-width: 400px) {
   #hometext {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
 .botonhome {
@@ -655,8 +693,5 @@ main h2 {
   .botonhome:hover {
     transform: scale(1.1);
     border: 2px solid rgb(255, 255, 255);
-  }
-  .botonhome:active {
-    background: linear-gradient(to top, rgb(255, 123, 0), rgb(255, 221, 26));
   }
 }/*# sourceMappingURL=style.css.map */

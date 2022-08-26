@@ -11,6 +11,13 @@
     "cbn7g";
 }
 
+#gridh {
+    display: grid;
+    grid-template-areas:
+    "cbn1h"
+    "cbn2h";
+}
+
 #gridm {
     display: grid;
     grid-template-areas:
@@ -54,12 +61,17 @@
     }
 
     #gridm {
-        display: grid;
         grid-template-areas:
         "title title"
         "cbn1m cbn2m"
         "cbn3m cbn4m";
         grid-template-columns: 50%; 
+    }
+
+    #gridh {
+        grid-template-areas:
+        "cbn1h cbn2h";
+        grid-template-columns: 50%;
     }
 }
 
@@ -129,4 +141,12 @@ footer {
 
 header {
     grid-area: header;
+}
+
+#cbn1h {
+    grid-area: cbn1h;
+}
+
+#cbn2h {
+    grid-area: cbn2h;
 }

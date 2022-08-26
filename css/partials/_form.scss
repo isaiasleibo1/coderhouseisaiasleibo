@@ -57,6 +57,18 @@ input {
         text-align: center;
         margin-top: 16px;
     }
+
+    @media only screen and (max-width: 400px) {
+        #formtitle {
+            h2, h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
     
     .formtitle {
         background: linear-gradient(rgb(30, 30, 255), rgb(30, 135, 255));
