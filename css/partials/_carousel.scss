@@ -1,0 +1,60 @@
+.btncarr {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.carousel-caption h5, .carousel-caption p {
+    background-color: black;
+    padding: 1%;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.carousel.slide {
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    border-radius: 1em;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+.carousel-caption {
+    padding-bottom: 0 !important;
+}
+
+.carousel-caption {
+        font-size: 80%;
+    }
+
+@media only screen and (min-width: 426px) {
+    .carousel-caption {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .carousel-indicators {
+        display: flex;
+    }
+
+    .carousel-caption {
+        padding-bottom: 1.25rem !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 360px) {
+    .carousel.slide {
+        width: 90vw !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .carousel.slide {
+        width: 70vw !important;
+    }
+}

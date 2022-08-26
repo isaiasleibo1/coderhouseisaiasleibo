@@ -1,0 +1,120 @@
+.cube {
+    border-radius: 10px;
+    border: 3px solid rgb(255, 255, 255);
+    background-size: cover;
+    background-position-y:center;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    transition: all 700ms;
+    height: 230px;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .cube {
+        height: 300px;
+    }
+    
+    .cube:hover {
+    transform: scale(1.01);
+    }
+}
+
+#cbn1h {
+    background-image: url(../img/forzaHorizon5.webp);
+    grid-area: cbn1h;
+}
+
+#cbn2h {
+    background-image: url(../img/paqueteAdobe.webp);
+    grid-area: cbn2h;
+}
+
+#cbn3h {
+    background-image: url(../img/office.webp);
+    grid-area: cbn3h;
+}
+
+#cbn4h {
+    background-image: url(../img/fortnite.webp);
+    grid-area: cbn4h;
+}
+
+#cbn5h {
+    background-image: url(../img/rocketLeauge.webp);
+    grid-area: cbn5h;
+}
+
+#cbn6h {
+    background-image: url(../img/stray.webp);
+    background-position: top !important;
+    grid-area: cbn6h;
+}
+
+#cbn7h {
+    background-image: url(../img/zoom.webp);
+    grid-area: cbn7h;
+}
+
+#cbn1g {
+    background-image: url(../img/splitgate.webp);
+    grid-area: cbn1g;
+}
+
+#cbn2g {
+    background-image: url(../img/portal.webp);
+    grid-area: cbn2g;
+}
+
+#cbn3g {
+    background-image: url(../img/portal2.webp);
+    grid-area: cbn3g;
+}
+
+#cbn4g {
+    background-image: url(../img/forzaHorizon5.webp);
+    grid-area: cbn4g;
+}
+
+#cbn5g {
+    background-image: url(../img/fortnite.webp);
+    grid-area: cbn5g;
+}
+
+#cbn6g {
+    background-image: url(../img/rocketLeauge.webp);
+    grid-area: cbn6g;
+}
+
+#cbn7g {
+    background-image: url(../img/stray.webp);
+    background-position: top !important;
+    grid-area: cbn7g;
+}
+
+#cbn1m {
+    background-image: url(../img/marvel.webp);
+    background-position: top !important;
+    grid-area: cbn1m;
+}
+
+#cbn2m {
+    background-image: url(../img/starWars.webp);
+    grid-area: cbn2m;
+}
+
+#cbn3m {
+    background-image: url(../img/disney.webp);
+    background-position: bottom !important;
+    grid-area: cbn3m;
+}
+
+#cbn4m {
+    background-image: url(../img/pixar.webp);
+    grid-area: cbn4m;
+}

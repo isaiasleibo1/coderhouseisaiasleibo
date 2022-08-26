@@ -1,0 +1,87 @@
+@media only screen and (min-width: 1200px) and (max-width: 1470px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+body {
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255) !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#abwetext {
+    margin-right: 5px;
+    margin-left: 5px;
+    background: linear-gradient(rgb(30, 30, 255), rgb(30, 135, 255));
+    padding: 10px;
+    border-radius: 1em;
+    margin-top: 16px;
+    grid-area: abwetext;
+}
+
+main h2 {
+    margin-top: 16px;
+    margin-left: 10px;
+    grid-area: title;
+}
+
+#hometext {
+    margin-right: 5px;
+    margin-left: 5px;
+    background: linear-gradient(rgb(30, 30, 255), rgb(30, 135, 255));
+    padding: 10px;
+    border-radius: 1em;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 16px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 510px) {
+    #hometext {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #hometext {
+        font-size: 17px;
+    }
+}
+
+.botonhome {
+    margin: 0 auto;
+    padding: 10px;
+    background: linear-gradient(rgb(255, 123, 0), rgb(255, 221, 26));
+    width: fit-content;
+    border-radius: 1em;
+    transition: all 0.7s;
+}
+
+.botonhome p {
+    margin: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .botonhome:hover {
+        transform: scale(1.1);
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    .botonhome:active {
+        background: linear-gradient( to top, rgb(255, 123, 0), rgb(255, 221, 26));
+    }
+}

@@ -1,0 +1,64 @@
+#gridg {
+    display: grid;
+    grid-template-areas: 
+    "title"    
+    "cbn1g"
+    "cbn2g"
+    "cbn3g"
+    "cbn4g"
+    "cbn5g"
+    "cbn6g"
+    "cbn7g";
+}
+
+#gridm {
+    display: grid;
+    grid-template-areas:
+    "title"
+    "cbn1m"
+    "cbn2m"
+    "cbn3m"
+    "cbn4m"; 
+}
+
+#gridaw {
+    display: grid;
+    grid-template-areas:
+    "abwetext";
+}
+
+#gridc {
+    display: grid;
+    grid-template-areas:
+    "formt"
+    "form";
+}
+
+#grids {
+    display: grid;
+    grid-template-areas:
+    "titles"
+    "homebtn";
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #gridg {
+        grid-template-areas: 
+        "title title title title"    
+        "cbn1g cbn1g cbn1g cbn1g"
+        "cbn2g cbn2g cbn2g cbn3g"
+        "cbn4g cbn5g cbn5g cbn5g"
+        "cbn6g cbn6g cbn7g cbn7g";
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    #gridm {
+        display: grid;
+        grid-template-areas:
+        "title title"
+        "cbn1m cbn2m"
+        "cbn3m cbn4m";
+        grid-template-columns: 50%; 
+    }
+}
