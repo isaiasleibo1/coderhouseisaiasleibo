@@ -62,3 +62,71 @@
         grid-template-columns: 50%; 
     }
 }
+
+#abwetext {
+    grid-area: abwetext;
+}
+
+main h2 {
+    grid-area: title;
+}
+
+#cbn1g {
+    grid-area: cbn1g;
+}
+
+#cbn2g {
+    grid-area: cbn2g;
+}
+
+#cbn3g {
+    grid-area: cbn3g;
+}
+
+#cbn4g {
+    grid-area: cbn4g;
+}
+
+#cbn5g {
+    grid-area: cbn5g;
+}
+
+#cbn6g {
+    grid-area: cbn6g;
+}
+
+#cbn7g {
+    grid-area: cbn7g;
+}
+
+#cbn1m {
+    grid-area: cbn1m;
+}
+
+#cbn2m {
+    grid-area: cbn2m;
+}
+
+#cbn3m {
+    grid-area: cbn3m;
+}
+
+#cbn4m {
+    grid-area: cbn4m;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#form {
+    grid-area: form;
+}
+
+#formtitle {
+    grid-area: formt;
+}
+
+header {
+    grid-area: header;
+}

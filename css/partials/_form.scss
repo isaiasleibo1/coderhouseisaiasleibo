@@ -1,5 +1,12 @@
 #form {
     transition: transform 700ms;
+    display:block;
+    background-color: rgb(0, 125, 228);
+    padding: 10px;
+    border-radius: 1em;
+    width: min-content;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -32,18 +39,7 @@ input {
     #submit {
         margin-top: 20px;
     }
-    
-    #form {
-        display:block;
-        background-color: rgb(0, 125, 228);
-        padding: 10px;
-        border-radius: 1em;
-        width: min-content;
-        grid-area: form;
-        padding-left: 17px;
-        padding-right: 17px;
-    }
-    
+
     textarea {
         resize: none;
         border: none;
@@ -58,7 +54,6 @@ input {
     }
     
     #formtitle {
-        grid-area: formt;
         text-align: center;
         margin-top: 16px;
     }
@@ -94,10 +89,10 @@ input {
         border-radius: 1em;
         margin-right: auto;
         margin-left: auto;
-    }
-    
-    .btn2 p {
-        margin: 0 auto;
+
+        p {
+            margin: 0 auto;
+        }
     }
     
     #titles {

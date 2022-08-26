@@ -3,11 +3,16 @@
     margin: 0 auto;
 }
 
-.carousel-caption h5, .carousel-caption p {
-    background-color: black;
-    padding: 1%;
-    border-radius: 10px;
-    opacity: 0.8;
+.carousel-caption {
+    padding-bottom: 0 !important;
+    font-size: 80%;
+
+    h5, p {
+        background-color: black;
+        padding: 1%;
+        border-radius: 10px;
+        opacity: 0.8;
+    }
 }
 
 .carousel.slide {
@@ -21,14 +26,6 @@
 .carousel-indicators {
     display: none;
 }
-
-.carousel-caption {
-    padding-bottom: 0 !important;
-}
-
-.carousel-caption {
-        font-size: 80%;
-    }
 
 @media only screen and (min-width: 426px) {
     .carousel-caption {

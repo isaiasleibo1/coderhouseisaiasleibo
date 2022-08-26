@@ -156,7 +156,6 @@ header {
   border-radius: 1em;
   top: 8px;
   z-index: 2;
-  grid-area: header; /**/
 }
 header img {
   width: 16px;
@@ -216,107 +215,58 @@ nav ul div:hover {
     transform: scale(1.01);
   }
 }
-#cbn1h {
-  background-image: url(../img/forzaHorizon5.webp);
-  grid-area: cbn1h;
-}
-
-#cbn2h {
-  background-image: url(../img/paqueteAdobe.webp);
-  grid-area: cbn2h;
-}
-
-#cbn3h {
-  background-image: url(../img/office.webp);
-  grid-area: cbn3h;
-}
-
-#cbn4h {
-  background-image: url(../img/fortnite.webp);
-  grid-area: cbn4h;
-}
-
-#cbn5h {
-  background-image: url(../img/rocketLeauge.webp);
-  grid-area: cbn5h;
-}
-
-#cbn6h {
-  background-image: url(../img/stray.webp);
-  background-position: top !important;
-  grid-area: cbn6h;
-}
-
-#cbn7h {
-  background-image: url(../img/zoom.webp);
-  grid-area: cbn7h;
-}
-
 #cbn1g {
   background-image: url(../img/splitgate.webp);
-  grid-area: cbn1g;
 }
 
 #cbn2g {
   background-image: url(../img/portal.webp);
-  grid-area: cbn2g;
 }
 
 #cbn3g {
   background-image: url(../img/portal2.webp);
-  grid-area: cbn3g;
 }
 
 #cbn4g {
   background-image: url(../img/forzaHorizon5.webp);
-  grid-area: cbn4g;
 }
 
 #cbn5g {
   background-image: url(../img/fortnite.webp);
-  grid-area: cbn5g;
 }
 
 #cbn6g {
   background-image: url(../img/rocketLeauge.webp);
-  grid-area: cbn6g;
 }
 
 #cbn7g {
   background-image: url(../img/stray.webp);
   background-position: top !important;
-  grid-area: cbn7g;
 }
 
 #cbn1m {
   background-image: url(../img/marvel.webp);
   background-position: top !important;
-  grid-area: cbn1m;
 }
 
 #cbn2m {
   background-image: url(../img/starWars.webp);
-  grid-area: cbn2m;
 }
 
 #cbn3m {
   background-image: url(../img/disney.webp);
   background-position: bottom !important;
-  grid-area: cbn3m;
 }
 
 #cbn4m {
   background-image: url(../img/pixar.webp);
-  grid-area: cbn4m;
 }
 
 footer {
   text-align: center;
   margin-top: 20px;
-  grid-area: footer;
   transition: all 0.7s;
 }
-
 footer p {
   margin-right: 5px;
   margin-left: 5px;
@@ -344,6 +294,7 @@ footer p {
   position: absolute;
   align-self: center;
   margin-top: 130px;
+  transition: transform 0.7s;
 }
 
 .boton p {
@@ -367,6 +318,15 @@ footer p {
 }
 #form {
   transition: transform 700ms;
+  display: block;
+  background-color: rgb(0, 125, 228);
+  padding: 10px;
+  border-radius: 1em;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -396,19 +356,6 @@ input:focus {
   margin-top: 20px;
 }
 
-#form {
-  display: block;
-  background-color: rgb(0, 125, 228);
-  padding: 10px;
-  border-radius: 1em;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  grid-area: form;
-  padding-left: 17px;
-  padding-right: 17px;
-}
-
 textarea {
   resize: none;
   border: none;
@@ -423,7 +370,6 @@ textarea {
 }
 
 #formtitle {
-  grid-area: formt;
   text-align: center;
   margin-top: 16px;
 }
@@ -461,7 +407,6 @@ textarea {
   margin-right: auto;
   margin-left: auto;
 }
-
 .btn2 p {
   margin: 0 auto;
 }
@@ -478,6 +423,10 @@ textarea {
   margin: 0 auto;
 }
 
+.carousel-caption {
+  padding-bottom: 0 !important;
+  font-size: 80%;
+}
 .carousel-caption h5, .carousel-caption p {
   background-color: black;
   padding: 1%;
@@ -495,14 +444,6 @@ textarea {
 
 .carousel-indicators {
   display: none;
-}
-
-.carousel-caption {
-  padding-bottom: 0 !important;
-}
-
-.carousel-caption {
-  font-size: 80%;
 }
 
 @media only screen and (min-width: 426px) {
@@ -564,6 +505,74 @@ textarea {
     grid-template-columns: 50%;
   }
 }
+#abwetext {
+  grid-area: abwetext;
+}
+
+main h2 {
+  grid-area: title;
+}
+
+#cbn1g {
+  grid-area: cbn1g;
+}
+
+#cbn2g {
+  grid-area: cbn2g;
+}
+
+#cbn3g {
+  grid-area: cbn3g;
+}
+
+#cbn4g {
+  grid-area: cbn4g;
+}
+
+#cbn5g {
+  grid-area: cbn5g;
+}
+
+#cbn6g {
+  grid-area: cbn6g;
+}
+
+#cbn7g {
+  grid-area: cbn7g;
+}
+
+#cbn1m {
+  grid-area: cbn1m;
+}
+
+#cbn2m {
+  grid-area: cbn2m;
+}
+
+#cbn3m {
+  grid-area: cbn3m;
+}
+
+#cbn4m {
+  grid-area: cbn4m;
+}
+
+footer {
+  grid-area: footer;
+}
+
+#form {
+  grid-area: form;
+}
+
+#formtitle {
+  grid-area: formt;
+}
+
+header {
+  grid-area: header;
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1470px) {
   h1 {
     font-size: 32px;
@@ -596,13 +605,11 @@ a {
   padding: 10px;
   border-radius: 1em;
   margin-top: 16px;
-  grid-area: abwetext;
 }
 
 main h2 {
   margin-top: 16px;
   margin-left: 10px;
-  grid-area: title;
 }
 
 #hometext {
