@@ -8,3 +8,34 @@
 @import "./partials/carousel";
 @import "./partials/grids";
 @import "./partials/all-page";
+
+#divprueba {
+    background-color: rgb(66, 66, 66);
+    height: 300px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 100px;
+    }
+
+    @media only screen and (max-width: 410px) {
+        img {
+            height: 80px;
+        }
+    }
+
+    div {
+        background-color: black;
+        border-radius: 12px;
+
+        p {
+            margin: 0;
+            margin: 10px;
+        }
+    }
+    
+}
