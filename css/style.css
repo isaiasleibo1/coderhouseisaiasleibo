@@ -275,6 +275,7 @@ header h1 {
 footer {
   text-align: center;
   transition: all 0.7s;
+  margin-top: auto;
 }
 footer p {
   margin-right: 5px;
@@ -630,6 +631,9 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 
 a {
