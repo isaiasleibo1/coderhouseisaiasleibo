@@ -17,6 +17,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-right: 7px;
+    margin-left: 7px;
+    
 
     img {
         height: 100px;
@@ -31,6 +34,7 @@
     div {
         background-color: black;
         border-radius: 12px;
+        cursor: pointer;
 
         p {
             margin: 0;
