@@ -621,6 +621,10 @@ header {
     font-size: 32px;
   }
 }
+html {
+  height: 100%;
+}
+
 body {
   background-color: rgb(48, 48, 48);
   color: rgb(255, 255, 255);
@@ -629,7 +633,6 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  min-height: 100vh;
 }
 
 a {
