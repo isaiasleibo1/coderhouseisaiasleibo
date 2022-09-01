@@ -66,15 +66,15 @@ input[type = "checkbox"] {
     align-self: center;
     position: relative;
     cursor: pointer;
-    width: 40px;
-    height: 35px;
+    width: 35px;
+    height: 30px;
     right: 0 !important;
     margin-right: 10px !important;
   }
   
   .bar span {
     position: absolute;
-    width: 35px;
+    width: 32px;
     height: 6px;
     background: #f1faee;
     border-radius: 100px;
@@ -88,7 +88,7 @@ input[type = "checkbox"] {
   }
   
   .bar span.middle {
-    top: 14.5px;
+    top: 12px;
   }
   
   .bar span.bottom {
@@ -98,14 +98,14 @@ input[type = "checkbox"] {
   input[type]:checked ~ span.top {
     transform: rotate(45deg);
     transform-origin: top left;
-    width: 43px;
+    width: 36px;
     left: 5px;
   }
   
   input[type]:checked ~ span.bottom {
     transform: rotate(-45deg);
     transform-origin: top left;
-    width: 43px;
+    width: 36px;
     bottom: -1px;
     box-shadow: 0 0 10px #495057;
   }
