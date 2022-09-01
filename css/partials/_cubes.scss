@@ -1,6 +1,6 @@
 .cube {
     border-radius: 10px;
-    border: 3px solid rgb(255, 255, 255);
+    border: 3px solid map-get($colors, border-cube-button-color);
     background-size: cover;
     background-position-y:center;
     background-position-x: center;

@@ -1,5 +1,5 @@
 .cube h1 {
-    background: linear-gradient(rgb(30, 30, 255), rgb(30, 135, 255));
+    background: map-get($colors, titles-color);
     padding: 10px;
     border-radius: 1rem;
     display: flex;
@@ -32,7 +32,7 @@
 
     .boton:hover {
         transform: scale(1.1);
-        border: 2px solid rgb(255, 255, 255);
+        border: 2px solid map-get($colors, border-cube-button-color);
     }
 
     .boton {

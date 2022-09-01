@@ -18,7 +18,7 @@
     
 }
 
-input {
+#name, #lastname, #email {
         border: none;
         border-radius: 1em;
         padding: 15px;
@@ -29,11 +29,11 @@ input {
         max-width: 200px;
         margin-bottom: 20px;
         margin-top: 3px;
-        color: rgb(255, 255, 255);
+        color: map-get($colors, border-color);
     }
        
     input:focus {
-        outline-color: rgb(255, 255, 255);
+        outline-color: map-get($colors, border-color);
     }
     
     #submit {
@@ -71,7 +71,7 @@ input {
     }
     
     .formtitle {
-        background: linear-gradient(rgb(30, 30, 255), rgb(30, 135, 255));
+        background: map-get($colors, titles-color);
         width: fit-content;
         margin: 0 auto;
         padding: 10px;
@@ -88,7 +88,7 @@ input {
     @media only screen and (min-width: 1200px) {
         
         .btn2:active {
-        color: rgb(255, 255, 255);
+        color: map-get($colors, border-color);
         box-shadow: inset 4px 4px 12px #272727,
                     inset -4px -4px 12px #000000;
        }

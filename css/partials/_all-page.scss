@@ -9,8 +9,8 @@ html {
 }
 
 body {
-    background-color: rgb(48, 48, 48);
-    color: rgb(255, 255, 255);
+    background-color: map-get($colors, body-background);
+    color: map-get($colors, text-color);
     font-family: 'Montserrat', sans-serif;
     user-select: none;
     display: flex;
@@ -20,7 +20,7 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(255, 255, 255) !important;
+    color: map-get($colors, text-color) !important;
 }
 
 ::-webkit-scrollbar {
@@ -30,7 +30,7 @@ a {
 #abwetext {
     margin-right: 7px;
     margin-left: 7px;
-    background: linear-gradient(rgb(30, 30, 255), rgb(30, 135, 255));
+    background: map-get($colors, titles-color);
     padding: 10px;
     border-radius: 1em;
     margin-top: 16px;
@@ -44,7 +44,7 @@ main h2 {
 #hometext {
     margin-right: 5px;
     margin-left: 5px;
-    background: linear-gradient(rgb(30, 30, 255), rgb(30, 135, 255));
+    background: map-get($colors, titles-color);
     padding: 10px;
     border-radius: 1em;
     width: fit-content;
@@ -62,7 +62,7 @@ main h2 {
 .botonhome {
     margin: 0 auto;
     padding: 10px;
-    background: linear-gradient(rgb(255, 123, 0), rgb(255, 221, 26));
+    background: map-get($colors, botonhome-color);
     width: fit-content;
     border-radius: 1em;
     transition: all 0.7s;
@@ -78,6 +78,6 @@ main h2 {
 
     .botonhome:hover {
         transform: scale(1.1);
-        border: 2px solid rgb(255, 255, 255);
+        border: 2px solid map-get($colors, border-color);
     }
 }

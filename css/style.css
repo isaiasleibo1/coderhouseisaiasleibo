@@ -197,7 +197,7 @@ header h1 {
 }
 .cube {
   border-radius: 10px;
-  border: 3px solid rgb(255, 255, 255);
+  border: 3px solid;
   background-size: cover;
   background-position-y: center;
   background-position-x: center;
@@ -320,7 +320,7 @@ footer p {
 @media only screen and (min-width: 1200px) {
   .boton:hover {
     transform: scale(1.1);
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid;
   }
   .boton {
     margin-top: 150px;
@@ -348,7 +348,7 @@ footer p {
     transform: scale(1.01);
   }
 }
-input {
+#name, #lastname, #email {
   border: none;
   border-radius: 1em;
   padding: 15px;
@@ -736,6 +736,72 @@ main h2 {
   margin: 10px;
 }
 
+.navbar-toggler {
+  border: 0 !important;
+  padding: 4px 0 4px 0;
+}
+
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0;
+}
+
+/* From uiverse.io by @Ali-Tahmazi99 */
+input[type=checkbox] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
+}
+
+.bar {
+  display: flex;
+  align-self: center;
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 35px;
+  right: 0 !important;
+  margin-right: 10px !important;
+}
+
+.bar span {
+  position: absolute;
+  width: 35px;
+  height: 6px;
+  background: #f1faee;
+  border-radius: 100px;
+  display: inline-block;
+  transition: 0.3s ease;
+  left: 0;
+}
+
+.bar span.top {
+  top: 0;
+}
+
+.bar span.middle {
+  top: 14.5px;
+}
+
+.bar span.bottom {
+  bottom: 0;
+}
+
+input[type]:checked ~ span.top {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 43px;
+  left: 5px;
+}
+
+input[type]:checked ~ span.bottom {
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  width: 43px;
+  bottom: -1px;
+  box-shadow: 0 0 10px #495057;
+}
+
+input[type]:checked ~ span.middle {
+  transform: translateX(-20px);
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */
