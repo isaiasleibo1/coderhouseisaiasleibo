@@ -1,14 +1,4 @@
-@import "./partials/maps";
-@import "./partials/logo";
-@import "./partials/submit-button-contact";
-@import "./partials/header";
-@import "./partials/cubes";
-@import "./partials/footer";
-@import "./partials/cubes-content";
-@import "./partials/form";
-@import "./partials/carousel";
-@import "./partials/grids";
-@import "./partials/all-page";
+@import "./partials/maps", "./partials/logo", "./partials/submit-button-contact", "./partials/header", "./partials/cubes", "./partials/footer", "./partials/cubes-content", "./partials/form", "./partials/carousel", "./partials/grids", "./partials/all-page", "./partials/hamburger-menu";
 
 #divprueba {
     background-color: rgb(66, 66, 66);
@@ -46,7 +36,7 @@
 
 .navbar-toggler {
     border: 0 !important;
-    padding: 4px 0 4px 0;
+    padding: 0;
 }
 
 .navbar-toggler:focus {
@@ -54,63 +44,3 @@
 }
 
 
-/* From uiverse.io by @Ali-Tahmazi99 */
-input[type = "checkbox"] {
-    -webkit-appearance: none;
-    display: none;
-    visibility: hidden;
-  }
-  
-  .bar {
-    display: flex;
-    align-self: center;
-    position: relative;
-    cursor: pointer;
-    width: 35px;
-    height: 30px;
-    right: 0 !important;
-    margin-right: 10px !important;
-  }
-  
-  .bar span {
-    position: absolute;
-    width: 32px;
-    height: 6px;
-    background: #f1faee;
-    border-radius: 100px;
-    display: inline-block;
-    transition: 0.3s ease;
-    left: 0;
-  }
-  
-  .bar span.top {
-    top: 0;
-  }
-  
-  .bar span.middle {
-    top: 12px;
-  }
-  
-  .bar span.bottom {
-    bottom: 0;
-  }
-  
-  input[type]:checked ~ span.top {
-    transform: rotate(45deg);
-    transform-origin: top left;
-    width: 36px;
-    left: 5px;
-  }
-  
-  input[type]:checked ~ span.bottom {
-    transform: rotate(-45deg);
-    transform-origin: top left;
-    width: 36px;
-    bottom: -1px;
-    box-shadow: 0 0 10px #495057;
-  }
-  
-  input[type]:checked ~ span.middle {
-    transform: translateX(-20px);
-    opacity: 0;
-  }
