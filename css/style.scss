@@ -1,4 +1,9 @@
-@import "./partials/maps", "./partials/logo", "./partials/submit-button-contact", "./partials/header", "./partials/cubes", "./partials/footer", "./partials/cubes-content", "./partials/form", "./partials/carousel", "./partials/grids", "./partials/all-page", "./partials/hamburger-menu";
+@import "./partials/maps", "./partials/logo", "./partials/submit-button-contact", "./partials/header", "./partials/cubes", "./partials/footer", "./partials/cubes-content", "./partials/form", "./partials/carousel", "./partials/grids", "./partials/all-page";
+
+@mixin margin7 {
+    margin-right: 7px;
+    margin-left: 7px;
+}
 
 #divprueba {
     background-color: rgb(66, 66, 66);
@@ -8,8 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 7px;
-    margin-left: 7px;
+    @include margin7;
     
 
     img {
@@ -36,11 +40,11 @@
 
 .navbar-toggler {
     border: 0 !important;
-    padding: 0;
 }
 
 .navbar-toggler:focus {
     box-shadow: 0 0 0 0;
+    @extend .navbar-toggler;
 }
 
 
