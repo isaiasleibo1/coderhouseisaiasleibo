@@ -8,7 +8,8 @@
     "cbn4g"
     "cbn5g"
     "cbn6g"
-    "cbn7g";
+    "cbn7g"
+    "media";
 }
 
 #gridh {
@@ -25,27 +26,32 @@
     "cbn1m"
     "cbn2m"
     "cbn3m"
-    "cbn4m"; 
+    "cbn4m"
+    "media"; 
 }
 
 #gridaw {
     display: grid;
     grid-template-areas:
-    "abwetext";
+    "abwetext"
+    "coder-link"
+    "media";
 }
 
 #gridc {
     display: grid;
     grid-template-areas:
     "formt"
-    "form";
+    "form"
+    "media";
 }
 
 #grids {
     display: grid;
     grid-template-areas:
     "titles"
-    "homebtn";
+    "homebtn"
+    "media";
 }
 
 @media only screen and (min-width: 1200px) {
@@ -56,7 +62,8 @@
         "cbn1g cbn1g cbn1g cbn1g"
         "cbn2g cbn2g cbn2g cbn3g"
         "cbn4g cbn5g cbn5g cbn5g"
-        "cbn6g cbn6g cbn7g cbn7g";
+        "cbn6g cbn6g cbn7g cbn7g"
+        "media media media media";
         grid-template-columns: 25% 25% 25% 25%;
     }
 
@@ -64,7 +71,8 @@
         grid-template-areas:
         "title title"
         "cbn1m cbn2m"
-        "cbn3m cbn4m";
+        "cbn3m cbn4m"
+        "media media";
         grid-template-columns: 50%; 
     }
 
@@ -149,4 +157,12 @@ header {
 
 #cbn2h {
     grid-area: cbn2h;
+}
+
+#divprueba {
+    grid-area: coder-link;
+}
+
+#social {
+    grid-area: media;
 }

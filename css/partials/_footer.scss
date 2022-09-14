@@ -9,3 +9,38 @@ footer {
         margin-left: 5px;
     }
 }
+
+#social {
+    display: flex; 
+    justify-content: center; 
+    background-color: black;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 1em;
+    padding: 5px;
+    margin-top: 16px;
+}
+
+.social_item {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    cursor: pointer;
+    margin: 7px;
+}
+
+@media only screen and (max-width: 445px) {
+    #social {
+        display: grid; 
+    }
+}
+
+.social_item_text {
+    margin: auto 0;
+}
+
+.social_item_image {
+    width: 30px;
+    height: 30px;
+}
