@@ -299,7 +299,7 @@ footer p {
   margin: 0 auto;
   border-radius: 1em;
   padding: 5px;
-  margin-top: 16px;
+  margin-bottom: 1rem;
 }
 
 .social_item {
@@ -381,6 +381,7 @@ footer p {
   width: min-content;
   padding-left: 17px;
   padding-right: 17px;
+  margin-bottom: 1em;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -419,7 +420,7 @@ textarea {
   border-radius: 1em;
   margin-top: 3px;
   width: 250px;
-  height: 150px;
+  height: 200px;
   padding: 15px;
 }
 
@@ -662,10 +663,6 @@ header {
 
 #divprueba {
   grid-area: coder-link;
-}
-
-#social {
-  grid-area: media;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1470px) {
