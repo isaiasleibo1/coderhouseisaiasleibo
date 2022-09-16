@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    background-color: map-get($colors, body-background);
+    background: map-get($colors, body-background);
     color: map-get($colors, text-color);
     font-family: 'Montserrat', sans-serif;
     user-select: none;

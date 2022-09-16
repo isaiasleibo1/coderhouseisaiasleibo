@@ -10,18 +10,27 @@ footer {
     }
 }
 
-#social {
-    display: flex; 
-    justify-content: center; 
-    background-color: black;
+#social_container {
+    margin: 0 auto;
     width: fit-content;
+}
+
+@media only screen and (max-width: 406px) {
+    #social_container {
+        width: 270px;
+    }
+}
+
+#social {
+    display: block;
+    background-color: black;
     margin: 0 auto;
     border-radius: 1em;
     padding: 5px;
     margin-bottom: 1rem;
 }
 
-.social_item {
+.social_item_div {
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -30,10 +39,8 @@ footer {
     margin: 7px;
 }
 
-@media only screen and (max-width: 445px) {
-    #social {
-        display: grid; 
-    }
+.social_item {
+    display: inline-block;
 }
 
 .social_item_text {
