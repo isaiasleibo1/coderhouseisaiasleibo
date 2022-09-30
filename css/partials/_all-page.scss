@@ -81,3 +81,45 @@ main h2 {
         border: 2px solid map-get($colors, border-color);
     }
 }
+
+#coderhousered {
+    background-color: rgb(66, 66, 66);
+    height: 300px;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include margin7;
+    
+
+    img {
+        height: 100px;
+    }
+
+    @media only screen and (max-width: 410px) {
+        img {
+            height: 80px;
+        }
+    }
+
+    div {
+        background-color: black;
+        border-radius: 12px;
+        cursor: pointer;
+
+        p {
+            margin: 0;
+            margin: 10px;
+        }
+    }    
+}
+
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+    @extend .navbar-toggler;
+}

@@ -736,7 +736,7 @@ main h2 {
     border: 2px solid rgb(255, 255, 255);
   }
 }
-#divprueba {
+#coderhousered {
   background-color: rgb(66, 66, 66);
   height: 300px;
   border-radius: 1em;
@@ -747,20 +747,20 @@ main h2 {
   margin-right: 7px;
   margin-left: 7px;
 }
-#divprueba img {
+#coderhousered img {
   height: 100px;
 }
 @media only screen and (max-width: 410px) {
-  #divprueba img {
+  #coderhousered img {
     height: 80px;
   }
 }
-#divprueba div {
+#coderhousered div {
   background-color: black;
   border-radius: 12px;
   cursor: pointer;
 }
-#divprueba div p {
+#coderhousered div p {
   margin: 0;
   margin: 10px;
 }
