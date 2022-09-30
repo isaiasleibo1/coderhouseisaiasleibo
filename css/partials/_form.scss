@@ -85,29 +85,6 @@
         align-items: center;
         text-align: center;
     }
-
-    @media only screen and (min-width: 1200px) {
-        
-        .btn2:active {
-        color: map-get($colors, border-color);
-        box-shadow: inset 4px 4px 12px #272727,
-                    inset -4px -4px 12px #000000;
-       }
-    }
-    
-    .btn2 {
-        background-color: rgb(19, 19, 19);
-        width: fit-content;
-        padding: 15px;
-        border-radius: 1em;
-        margin-right: auto;
-        margin-left: auto;
-        cursor: pointer;
-
-        p {
-            margin: 0 auto;
-        }
-    }
     
     #titles {
         margin-top: 16px;
