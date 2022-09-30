@@ -33,35 +33,35 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mb-auto ms-auto align-items-center"> 
 							&nbsp; <div class="nav-item" onclick="location.href = '../index.html'"> 
-								<img src="../icons/home.png"> 
+								<img src="../icon/home.png"> 
 								&nbsp; 
 								<li> 
 									<a>Inicio</a> 
 								</li>
                             </div>
                             <div class="nav-item" onclick="location.href = './games.html'"> 
-								<img src="../icons/games.png"> 
+								<img src="../icon/games.png"> 
 								&nbsp; 
 								<li> 
 									<a>Juegos</a> 
 								</li>
                             </div>
                             <div class="nav-item" onclick="location.href = './movies.html'"> 
-								<img src="../icons/movies.png"> 
+								<img src="../icon/movies.png"> 
 								&nbsp; 
 								<li> 
 									<a>Películas</a> 
 								</li>
                             </div>
                             <div class="nav-item" onclick="location.href = './aboutWe.html'"> 
-								<img src="../icons/aboutWe.png"> 
+								<img src="../icon/aboutWe.png"> 
 								&nbsp; 
 								<li> 
 									<a>Nosotros</a> 
 								</li>
                             </div>
                             <div class="nav-item" onclick="location.href = './contact.html'"> 
-								<img src="../icons/contact.png"> 
+								<img src="../icon/contact.png"> 
 								&nbsp; 
 								<li> 
 									<a>Contacto</a> 
@@ -85,25 +85,24 @@
         </section>
         <div id="formcontainer">
             <section id="form">
-                <form> 
+                <form action="https://formspree.io/f/xrgdkgye" method="POST"> 
 					<label for="name">Nombre</label> 
 					<br> 
-					<input id="name" type="text" autocomplete="off"> 
+					<input id="name" name="Nombre" type="text" autocomplete="off"> 
 					<br> 
 					<label for="lastname">Apellido</label> 
 					<br> 
-					<input id="lastname" type="text" autocomplete="off"> 
+					<input id="lastname" name="Apellido" type="text" autocomplete="off"> 
 					<br> 
 					<label for="email">E-mail</label> 
 					<br> 
-					<input id="email" type="email" autocomplete="off"> 
+					<input id="email" type="email" name="E-mail" autocomplete="off"> 
 					<br> 
 					<label for="comment">Comentario</label> 
 					<br> 
-					<textarea id="comment" cols="30" rows="10"></textarea> 
-				</form>
-                <div id="submitcontainer"> 
-					<button id="submit" onclick="setTimeout(()=>{location.href = '../pages/formsubmit.html'},1000);">
+					<textarea id="comment" name="Comentario" cols="30" rows="10"></textarea> 
+                    <div id="submitcontainer"> 
+					<button id="submit" type="submit">
                         <div class="svg-wrapper-1">
                             <div class="svg-wrapper"> 
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -115,9 +114,10 @@
 						<span>Enviar</span>
                     </button> 
 				</div>
+				</form>
+                
             </section>
         </div>
-
     </main>
 
     <footer>
@@ -127,21 +127,21 @@
             <div id="social">
                 <div class="social_item">
                     <div class="social_item_div">
-                        <img src="../icons/instagram.svg" class="social_item_image">
+                        <img src="../icon/instagram.svg" class="social_item_image">
                         &nbsp;
                         <p class="social_item_text">Instagram</p>
                     </div>
                 </div>
                 <div class="social_item">
                     <div class="social_item_div">
-                        <img src="../icons/facebook.svg" class="social_item_image">
+                        <img src="../icon/facebook.svg" class="social_item_image">
                         &nbsp;
                         <p class="social_item_text">Facebook</p>
                     </div>
                 </div>
                 <div class="social_item">
                     <div class="social_item_div">
-                        <img src="../icons/whatsapp.svg" class="social_item_image">
+                        <img src="../icon/whatsapp.svg" class="social_item_image">
                         &nbsp;
                         <p class="social_item_text">WhatsApp</p>
                     </div>
@@ -149,8 +149,10 @@
             </div>
         </div>
     </footer>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

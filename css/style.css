@@ -294,6 +294,7 @@ footer p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 450px) {
@@ -550,7 +551,7 @@ textarea {
 }
 #gridg {
   display: grid;
-  grid-template-areas: "title" "cbn1g" "cbn2g" "cbn3g" "cbn4g" "cbn5g" "cbn6g" "cbn7g" "media";
+  grid-template-areas: "title" "cbn1g" "cbn2g" "cbn3g" "cbn4g" "cbn5g" "cbn6g" "cbn7g";
 }
 
 #gridh {
@@ -560,31 +561,31 @@ textarea {
 
 #gridm {
   display: grid;
-  grid-template-areas: "title" "cbn1m" "cbn2m" "cbn3m" "cbn4m" "media";
+  grid-template-areas: "title" "cbn1m" "cbn2m" "cbn3m" "cbn4m";
 }
 
 #gridaw {
   display: grid;
-  grid-template-areas: "abwetext" "coder-link" "media";
+  grid-template-areas: "abwetext" "coder-link";
 }
 
 #gridc {
   display: grid;
-  grid-template-areas: "formt" "form" "media";
+  grid-template-areas: "formt" "form";
 }
 
 #grids {
   display: grid;
-  grid-template-areas: "titles" "homebtn" "media";
+  grid-template-areas: "titles" "homebtn";
 }
 
 @media only screen and (min-width: 1200px) {
   #gridg {
-    grid-template-areas: "title title title title" "cbn1g cbn1g cbn1g cbn1g" "cbn2g cbn2g cbn2g cbn3g" "cbn4g cbn5g cbn5g cbn5g" "cbn6g cbn6g cbn7g cbn7g" "media media media media";
+    grid-template-areas: "title title title title" "cbn1g cbn1g cbn1g cbn1g" "cbn2g cbn2g cbn2g cbn3g" "cbn4g cbn5g cbn5g cbn5g" "cbn6g cbn6g cbn7g cbn7g";
     grid-template-columns: 25% 25% 25% 25%;
   }
   #gridm {
-    grid-template-areas: "title title" "cbn1m cbn2m" "cbn3m cbn4m" "media media";
+    grid-template-areas: "title title" "cbn1m cbn2m" "cbn3m cbn4m";
     grid-template-columns: 50%;
   }
   #gridh {

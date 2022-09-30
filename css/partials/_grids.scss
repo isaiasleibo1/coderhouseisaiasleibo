@@ -8,8 +8,7 @@
     "cbn4g"
     "cbn5g"
     "cbn6g"
-    "cbn7g"
-    "media";
+    "cbn7g";
 }
 
 #gridh {
@@ -26,32 +25,28 @@
     "cbn1m"
     "cbn2m"
     "cbn3m"
-    "cbn4m"
-    "media"; 
+    "cbn4m"; 
 }
 
 #gridaw {
     display: grid;
     grid-template-areas:
     "abwetext"
-    "coder-link"
-    "media";
+    "coder-link";
 }
 
 #gridc {
     display: grid;
     grid-template-areas:
     "formt"
-    "form"
-    "media";
+    "form";
 }
 
 #grids {
     display: grid;
     grid-template-areas:
     "titles"
-    "homebtn"
-    "media";
+    "homebtn";
 }
 
 @media only screen and (min-width: 1200px) {
@@ -62,8 +57,7 @@
         "cbn1g cbn1g cbn1g cbn1g"
         "cbn2g cbn2g cbn2g cbn3g"
         "cbn4g cbn5g cbn5g cbn5g"
-        "cbn6g cbn6g cbn7g cbn7g"
-        "media media media media";
+        "cbn6g cbn6g cbn7g cbn7g";
         grid-template-columns: 25% 25% 25% 25%;
     }
 
@@ -71,8 +65,7 @@
         grid-template-areas:
         "title title"
         "cbn1m cbn2m"
-        "cbn3m cbn4m"
-        "media media";
+        "cbn3m cbn4m";
         grid-template-columns: 50%; 
     }
 
